@@ -1,0 +1,393 @@
+:root {
+    --main-bg-color: #3ad0e7;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* link */
+
+a:link {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* navbar */
+
+.navbar {
+    z-index: 3;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: white;
+}
+
+.nav-item {
+    color: white;
+}
+
+#navbarNav {
+    background-color: #092947;
+    padding: 20px;
+}
+
+.garis_verikal {
+    border-left: 1px black solid;
+    height: 170px;
+    width: 0px;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+/* hero section */
+
+#hero {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.img-hero {
+    width: 100%;
+}
+
+/* unit recommendation */
+
+.h2,
+h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/* recommendation */
+
+.card {
+    background-color: #092947;
+    background: #092947;
+    width: 265px;
+    height: 100%;
+    border: none;
+    color: #2173c0;
+    font-size: 24px;
+}
+
+.card-lokasi {
+    color: #000;
+}
+
+.card-fasilitas {
+    position: inherit;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+}
+
+/* .card:hover {
+    background: linear-gradient(
+        150deg,
+        var(--main-bg-color),
+        #39d9f1,
+        #0a6f7e,
+        #01373f
+    );
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all ease-in 0.2s;
+    color: aliceblue;
+}
+
+.card:hover .card-fasilitas {
+    background-color: rgb(7, 99, 173);
+}
+
+.card:hover .card-lokasi {
+    color: aliceblue;
+    transition: all ease-in-out 0.2s;
+} */
+
+/* deskripsi rumah */
+
+#deskripsi-rumah {
+    padding: 10px 0;
+}
+
+.deskripsi h2 {
+    color: #ef233c;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.deskripsi h1 {
+    color: #000;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.deskripsi p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* fasilitas */
+
+#fasilitas-rumah {
+    padding: 10px 0;
+}
+
+#fasilitas-rumah .card {
+    color: #000;
+}
+
+/* hero bawah */
+
+.hero {
+    background-size: cover;
+    min-height: 80vh;
+    position: relative;
+    color: #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(38, 130, 235, 0.2),
+        rgba(236, 229, 229, 0.5)
+    );
+}
+
+.color-overlay-fasilitas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(26, 101, 187, 0.8),
+        rgba(236, 229, 229, 0.8)
+    );
+}
+
+.container-banner {
+    width: 500px;
+    height: 250px; /* Atur tinggi div */
+    display: flex;
+    justify-content: center; /* Pusatkan horizontal */
+    align-items: center; /* Pusatkan vertikal */
+    background-color: #092947;
+    border-radius: 20px;
+}
+
+.centered-text-box {
+    padding: 65px; /* Sesuaikan padding untuk kebutuhan desain Anda */
+    color: #ce900b;
+}
+
+.text-banner {
+    font-size: 12px;
+}
+
+.fasilitas-text {
+    color: #92670a;
+}
+
+/* fasilitas */
+
+.img-fasilitas {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.fasilitas-item h5 {
+    text-align: center;
+    color: #92670a;
+    font-size: 15px;
+}
+
+.container-fasilitas {
+    background-size: cover;
+    min-height: 40vh;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.icon-fasilitas {
+    width: 100px;
+    height: 100px;
+}
+
+/* type rumah */
+#type-rumah {
+    color: #0a4588;
+}
+.vertical-line {
+    border-left: 10px solid rgb(19, 104, 184); /* Ketebalan, warna, dan gaya garis */
+    height: 80px; /* Sesuaikan tinggi garis */
+}
+
+.img-carousel {
+    border-radius: 20px;
+}
+
+.centered-text-box-type {
+    padding: 10px; /* Sesuaikan padding untuk kebutuhan desain Anda */
+    color: black;
+}
+
+.container-type {
+    width: 400px;
+    height: 200px; /* Atur tinggi div */
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* Keunggulan */
+
+.keunggulan {
+    background-size: cover;
+    min-height: 80vh;
+    position: relative;
+    color: #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.color-overlay-keunggulan {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(236, 229, 229, 1),
+        rgba(26, 101, 187, 1)
+    );
+}
+
+.text-keunggulan {
+    font-size: 12px;
+}
+
+.text-box-keunggulan {
+    background-color: white;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    color: #1f3e72;
+    margin-bottom: 10px;
+}
+
+.icon-keunggulan {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+.container-keunggulan {
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* artikel */
+
+#card-judul {
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+    border-color: white;
+}
+
+.card-body p {
+    font-size: 8px;
+    color: white;
+}
+
+/* pilihan terbaik */
+
+.card-img-pilihan {
+    width: 220px;
+    height: 150px;
+}
+
+/* lokasi-fasilitas */
+
+#lokasi-fasilitas {
+    color: white;
+}
+
+.box-fasilitas {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer */
+
+#footer {
+    background-color: #252424;
+}
+
+.footer {
+    color: #fff;
+}
+
+.footer h3 {
+    font-weight: 600;
+}
+
+/* login */
+
+.login {
+    height: 100vh;
+}
+
+.header h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+}
+
+.header p {
+    position: absolute;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #e8717f;
+}
+
+.login-form span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+.login-form span a {
+    font-weight: 600;
+}
+
+.carousel-inner {
+    border-image-width: 100vh;
+}
+
+a.btn.btn-danger {
+    background-color: #dc3545;
+}
