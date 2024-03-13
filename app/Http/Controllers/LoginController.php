@@ -28,7 +28,7 @@ class LoginController extends Controller
             if (Auth::user()->role == 'admin') {
                 return redirect('dashboard/admin');
             } elseif (Auth::user()->role == 'anggota') {
-                return redirect('dashboard/anggota');
+                return redirect('/dashboard/admin');
             }
         }
         return back()->with('loginError', 'Login gagal username atau password yang dimasukkan tidak sesuai');
