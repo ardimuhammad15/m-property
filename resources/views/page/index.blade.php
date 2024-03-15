@@ -1,83 +1,89 @@
-@extends('laymas')
+@extends('page.laymas')
 @section('content')
 
-    <section id="utama">
-      <div class="hero container-fluid" style="background-image: url('img/banner.png')">
-            <div class="info-banner">
-              <div class="color-overlay-banner">
-                  <div class="container-banner">
-                    <div class="centered-text-box">
-                      <p class="mb-3" style="text-align: center"><b> Kenyamanan dan Kualitas Hidup yang Dijamin </b></p>
-                      <span class="text-banner">Fasilitas modern termasuk taman bermain anak dan keamanan 24 jam. 
-                        Hubungi kami untuk informasi lebih lanjut dan jadwal kunjungan ke lokasi. 
-                        Segera wujudkan hunian impian Anda bersama Mutiara Residence!</span>
-                        <div class="mt-3 d-flex justify-content-center">
-                          <a href="">
-                            <button type="button" class="btn btn-outline-warning">Info Lebih Lanjut</button>
-                          </a>
-                        </div>
+    <section id="utama" style="padding-top: 100px;">
+      <div class="container-fluid h-100">
+          <div class="hero" style="background-image: url('./Assets/img/home-content.svg');">
+              <div class="color-overlay d-flex">
+                  <div class="img-banner col-6 d-flex justify-content-center align-items-center">
+                    <img src="img/home-banner.jpg" style="border-radius: 20px;" width="350" height="350" alt="">
+                  </div>
+                  <div class="deskripsi-banner col-6 d-flex justify-content-center align-items-center">
+                      <div class="container-banner">
+                          <div class="centered-text-box">
+                              <p class="mb-3" style="text-align: center"><b>Kenyamanan dan Kualitas Hidup yang Dijamin</b></p>
+                              <span class="text-banner">Fasilitas modern termasuk taman bermain anak dan keamanan 24 jam. 
+                                  Hubungi kami untuk informasi lebih lanjut dan jadwal kunjungan ke lokasi. 
+                                  Segera wujudkan hunian impian Anda bersama Mutiara Residence!</span>
+                              <div class="mt-3 d-flex justify-content-center">
+                                  <a href="">
+                                      <button type="button" class="btn btn-outline-warning">Info Lebih Lanjut</button>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="container-fluid">
+          <div class="container-fasilitas" style="background-image: url('./Assets/img/home-content.svg');">
+              <div class="color-overlay-fasilitas">
+                  <div class="row">
+                      <div class="fasilitas-text p-3 d-flex justify-content-center align-items-center">
+                          <h2><b>FASILITAS</b></h2> 
+                      </div>
+                  </div>
+                  <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                      <div class="fasilitas-item">
+                        <img class="img-fasilitas" src="/img/call.png" alt="">
+                        <br>
+                        <h5>Telepon</h5>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                      <div class="fasilitas-item">
+                        <img class="img-fasilitas" src="/img/bed.png" alt="">
+                        <br>
+                        <h5>Kamar</h5> 
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                      <div class="fasilitas-item">
+                        <img class="img-fasilitas" src="/img/cctv.png" alt="">
+                        <br>
+                        <h5>CCTV</h5> 
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                      <div class="fasilitas-item">
+                        <img class="img-fasilitas" src="/img/taman.png" alt="">
+                        <br>
+                        <h5>Taman Anak</h5> 
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                      <div class="fasilitas-item">
+                        <img class="img-fasilitas" src="/img/security.png" alt="">
+                        <br>
+                        <h5>Keamanan 24 Jam</h5> 
+                      </div>
                     </div>
                   </div>
               </div>
-            </div>
           </div>
       </div>
-    </section>
-
-    <section id="fasilitas">
-      <div class="container-fasilitas container-fluid"  style="background-image: url('./Assets/img/home-content.svg');">
-          <div class="color-overlay-fasilitas container-fluid">
-            <div class="row">
-              <div class="fasilitas-text p-3 d-flex justify-content-center align-items-center">
-              <h2><b>FASILITAS</b></h2> 
-              </div>
-            </div>
-            <div class="row d-flex justify-content-center align-items-center">
-              <div class="col-2 d-flex justify-content-center align-items-center">
-                <div class="fasilitas-item">
-                  <img class="img-fasilitas" src="/img/call.png" alt="">
-                  <br>
-                  <h5>Telepon</h5>
-                </div>
-              </div>
-              <div class="col-2 d-flex justify-content-center align-items-center">
-                <div class="fasilitas-item">
-                  <img class="img-fasilitas" src="/img/bed.png" alt="">
-                  <br>
-                  <h5>Kamar</h5> 
-                </div>
-              </div>
-              <div class="col-2 d-flex justify-content-center align-items-center">
-                <div class="fasilitas-item">
-                  <img class="img-fasilitas" src="/img/cctv.png" alt="">
-                  <br>
-                  <h5>CCTV</h5> 
-                </div>
-              </div>
-              <div class="col-2 d-flex justify-content-center align-items-center">
-                <div class="fasilitas-item">
-                  <img class="img-fasilitas" src="/img/taman.png" alt="">
-                  <br>
-                  <h5>Taman Anak</h5> 
-                </div>
-              </div>
-              <div class="col-2 d-flex justify-content-center align-items-center">
-                <div class="fasilitas-item">
-                  <img class="img-fasilitas" src="/img/security.png" alt="">
-                  <br>
-                  <h5>Keamanan 24 Jam</h5> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  </section>
 
     <section id="type-rumah">
       <div class="container-fluid" style="background-color: #c2c9c3">
-        <div class="row mb-2">
-          <div class="judul-type-rumah col-8 p-2">
+        <div class="row">
+          <div class="col-1">
+            <div class="vertical-line"></div>
+          </div>
+          <div class="col-8">
             <div class="row">
               <h2>MUTIARA RESIDENCE</h2>
             </div>
@@ -86,7 +92,7 @@
             </div>
           </div>
         </div>
-        <div class="row p-2 mb-2">
+        <div class="row p-2">
           <div class="col-5">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -172,7 +178,8 @@
     </section>
 
     <section id="keunggulan">
-      <div class="keunggulan">
+      <div class="container-fluid">
+          <div class="keunggulan">
             <div class="color-overlay-keunggulan d-flex">
               <div class="img-keunggulan col-6 d-flex justify-content-center align-items-center">
                 <img src="img/img-keunggulan.png" width="350" height="400" alt="">
@@ -215,67 +222,88 @@
                   </div>
               </div>
             </div>
-      </div>
-    </section>
-
-    <section id="lantai">
-      <div class="container-fluid">
-            <div class="row align-items-start">
-              <div class="col d-flex justify-content-center" style="background-color: #2173C0">
-                <h3>Lantai 1</h3>
-                <hr>
-              </div>
-              <div class="col d-flex justify-content-center" style="background-color: #0F3B65">
-                <h3>Lantai 2</h3>
-                <hr>
-              </div>
-            </div>
-            <div class="row align-items-start">
-              <div class="col p-2" style="background-color: #2173C0">
-                <img src="{{ asset('img/lantai-1.png') }}" class="d-block w-100" alt="">
-              </div>
-              <div class="col p-2" style="background-color: #0F3B65">
-                <img src="{{ asset('img/lantai-2.png') }}" class="d-block w-100" height="110" alt="">
-              </div>
-            </div>
+          </div>
       </div>
     </section>
 
     <section id="artikel">
-      <div class="container-fluid" style="background-color: #092947">
-        <div class="p-3 ms-3">
-          <h4 style="color: white">Artikel</h4>
+      <div class="container-fluid">
+    
+        <!-- First part of the artikel section -->
+        <div class="row align-items-start">
+          <div class="col d-flex justify-content-center" style="background-color: #2173C0">
+            <h3>Lantai 1</h3>
+            <hr>
+          </div>
+          <div class="col d-flex justify-content-center" style="background-color: #0F3B65">
+            <h3>Lantai 2</h3>
+            <hr>
+          </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <div class="row">
-            <div class="card">  
-              <img src="{{ asset('img/artikel-1.png') }}" class="card-img-top" alt="">
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <button id="card-judul" type="button" class="btn btn-outline-primary" disabled>Mutiara Artikel</button>
-                  <p>09 Maret 2024</p>
-                </div>
-                <div>
-                  <p style="color: #2173C0">Perumahan Elite Terjangkau Jakarta, Mutiara Residance!</p>
-                </div>
-                <div>
-                  <a href="">
-                    <i class="fa-solid fa-arrow-right" style="font-size: 7px">  Selanjutnya</i>
-                  </a>
+        <div class="row align-items-start">
+          <div class="col p-2" style="background-color: #2173C0">
+            <img src="{{ asset('img/lantai-1.png') }}" class="d-block w-100" alt="">
+          </div>
+          <div class="col p-2" style="background-color: #0F3B65">
+            <img src="{{ asset('img/lantai-2.png') }}" class="d-block w-100" height="110" alt="">
+          </div>
+        </div>
+    
+        <!-- Second part of the artikel section -->
+        <div style="background-color: #092947">
+          <div class="p-3 ms-3">
+            <h4 style="color: white">Artikel</h4>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="row">
+              <div class="card">  
+                <img src="{{ asset('img/artikel-1.png') }}" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <button id="card-judul" type="button" class="btn btn-outline-primary" disabled>Mutiara Artikel</button>
+                    <p>09 Maret 2024</p>
+                  </div>
+                  <div>
+                    <p style="color: #2173C0">Perumahan Elite Terjangkau Jakarta, Mutiara Residance!</p>
+                  </div>
+                  <div>
+                    <a href="">
+                      <i class="fa-solid fa-arrow-right" style="font-size: 7px">  Selanjutnya</i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+              <div class="row">
+                <div class="card">
+                  <img src="{{ asset('img/artikel-2.png') }}" class="card-img-top" alt="">
+                  <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <button id="card-judul" type="button" class="btn btn-outline-primary" disabled>Mutiara Artikel</button>
+                        <p>09 Maret 2024</p>
+                      </div>
+                      <div>
+                        <p style="color: #2173C0">Masih Ragu? Ini Keuntungan Memiliki Rumah Cluster</p>
+                      </div>
+                      <div>
+                        <a href="">
+                          <i class="fa-solid fa-arrow-right" style="font-size: 7px">  Selanjutnya</i>
+                        </a>
+                      </div>
+                  </div>
+                </div>
+              </div>
             <div class="row">
               <div class="card">
-                <img src="{{ asset('img/artikel-2.png') }}" class="card-img-top" alt="">
+                <img src="{{ asset('img/artikel-3.png') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
                       <button id="card-judul" type="button" class="btn btn-outline-primary" disabled>Mutiara Artikel</button>
                       <p>09 Maret 2024</p>
                     </div>
                     <div>
-                      <p style="color: #2173C0">Masih Ragu? Ini Keuntungan Memiliki Rumah Cluster</p>
+                      <p style="color: #2173C0">Inspirasi Warna Cat Rumah yang Cantik nan Populer
+                        8</p>
                     </div>
                     <div>
                       <a href="">
@@ -285,32 +313,13 @@
                 </div>
               </div>
             </div>
-          <div class="row">
-            <div class="card">
-              <img src="{{ asset('img/artikel-3.png') }}" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <button id="card-judul" type="button" class="btn btn-outline-primary" disabled>Mutiara Artikel</button>
-                    <p>09 Maret 2024</p>
-                  </div>
-                  <div>
-                    <p style="color: #2173C0">Inspirasi Warna Cat Rumah yang Cantik nan Populer
-                      8</p>
-                  </div>
-                  <div>
-                    <a href="">
-                      <i class="fa-solid fa-arrow-right" style="font-size: 7px">  Selanjutnya</i>
-                    </a>
-                  </div>
-              </div>
-            </div>
+          </div>
+          <div class="d-flex justify-content-center p-3">
+            <button type="button" class="btn btn-primary">Lihat Semua</button>
           </div>
         </div>
-        <div class="d-flex justify-content-center p-3">
-          <button type="button" class="btn btn-primary">Lihat Semua</button>
-        </div>
+    
       </div>
-    </section>
 
     <section id="portfolio">
       <div class="container-fluid p-2" style="background-color: #092947">
@@ -501,7 +510,6 @@
               <h5 class="text-center">Copyright ©2024 All rights reserved</h5>
             </div>
         </div>
-       
       </div>
     </section>
 @endsection
