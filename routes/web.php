@@ -1,9 +1,10 @@
 <?php
 
+use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\TambahUserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,20 +16,28 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/index', function () {
+Route::get('/', function () {
     return view('index')->with('title', 'Home');
 })->name('home');
 
+Route::get('/tes-dashboard', function () {
+    return view('tes-dashboard')->with('title', 'Test');
+})->name('Test');
+
+Route::get('/artikel', function () {
+    return view('artikel')->with('title', 'Artikel');
+})->name('artikel');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
-Route::get('/register', [RegisterController::class, 'index'])->name('register');
-Route::post('/register', [RegisterController::class, 'store']);
+Route::get('/dashboard/kelola-userr', [RegisterController::class, 'index'])->name('kelola-user');
+Route::post('/dashboard/kelola-userr', [RegisterController::class, 'store']);
 
-Route::get('/dashboard/admin', [DashboardController::class, 'admin']);
+Route::resource('/dashboard/kelola-user', TambahUserController::class);
+Route::resource('/dashboard/admin', DashboardAdminController::class);

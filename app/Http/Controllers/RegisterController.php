@@ -12,7 +12,7 @@ class RegisterController extends Controller
     {
         return view('auth.register', [
             'title' => 'Register',
-            'active' => 'register'
+            'active' => 'register',
         ]);
     }
     public function store(Request $request)
@@ -29,6 +29,6 @@ class RegisterController extends Controller
 
         // $request->session()->flash('success', 'Registrasi Selesai! Silahkan Masuk');
 
-        return redirect('/login')->with('success', 'Registrasi Selesai! Silahkan Masuk');
+        return redirect('/dashboard/kelola-user')->with('success', 'Penambahan User Berhasil!');
     }
 }
