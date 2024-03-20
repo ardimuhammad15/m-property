@@ -13,6 +13,7 @@
   <section class="content">
     <div class="container">
       <form action="/dashboard/admin" method="post">
+        @csrf
         <div class="mb-3">
           <label for="artikel" class="form-label">Judul Artikel</label>
           <input type="text" class="form-control" id="artikel">
@@ -25,6 +26,9 @@
           <label for="isi-artikel" class="form-label">Isi Artikel</label>
           <textarea class="form-control" id="isi-artikel" rows="5"></textarea>
         </div>
+        <div class="">
+          <button type="submit" class="btn btn-primary btn-block">Tambah Artikel</button>
+      </div>
       </form>
     </div>
   </section>
