@@ -56,10 +56,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand m-lg-2" href="{{ url('/') }}">
-                <img src="{{ asset('img/main-logo.png') }}" alt="Logo" height="40">
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url('/') }}">
+                <img src="{{ asset('img/main-logo.png') }}" alt="Logo" height="65">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,16 +71,10 @@
                         <a class="nav-link" href="#utama">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#type-rumah">Type Rumah</a>
+                        <a class="nav-link" href="{{ url('/artikel') }}">Artikel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#keunggulan">Keunggulan </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#artikel">Artikel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="{{ url('/portfolio') }}">Portfolio</a>
                     </li>
                 </ul>
             </div>

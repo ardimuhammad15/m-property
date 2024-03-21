@@ -29,8 +29,24 @@ Route::get('/tes-dashboard', function () {
 })->name('Test');
 
 Route::get('/artikel', function () {
-    return view('artikel')->with('title', 'Artikel');
+    return view('menu-artikel')->with('title', 'Artikel');
 })->name('artikel');
+
+Route::get('/portfolio', function () {
+    return view('portfolio')->with('title', 'portfolio');
+})->name('portfolio');
+
+Route::get('/artikel/perumahan-elit', function () {
+    return view('artikel.perumahan-elit'); // Menggunakan notasi titik untuk path view
+});
+
+Route::get('/artikel/masih-ragu', function () {
+    return view('artikel.masih-ragu'); // Menggunakan notasi titik untuk path view
+}); 
+
+Route::get('/artikel/inspirasi-cat', function () {
+    return view('artikel.inspirasi-cat');
+});
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate']);

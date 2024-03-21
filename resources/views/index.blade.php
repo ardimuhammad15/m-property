@@ -1,11 +1,78 @@
 @extends('laymas')
 @section('content')
+    <style>
+        @media (max-width: 768px) {
+            .judul-type-rumah h2 {
+                font-size: 18px;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            @media (max-width: 768px) {
+                .card {
+                    margin-bottom: 20px;
+                }
+
+                .judul-type-rumah h2,
+                .keunggulan h3,
+                .pilihan .judul-pilihan p {
+                    font-size: 16px;
+                    /* Adjust the font size on smaller screens */
+                }
+
+                .card-body p,
+                .judul-lokasi h6,
+                .text-card p {
+                    font-size: 12px;
+                    /* Smaller text in cards and titles */
+                }
+            }
+        }
+
+        /* Base styles for the utama section */
+        #utama {
+            height: 100vh;
+            /* Full viewport height */
+            background-image: url('img/desktoplanding.jpg');
+            background-size: 1440;
+            /* Ensures the image fits within the container, might introduce blank spaces */
+            background-position: center center;
+            /* Centers the image */
+            background-repeat: no-repeat;
+            /* Prevents the image from repeating */
+        }
+
+        /* Adjustments specifically for larger screens (desktops) */
+        @media (min-width: 769px) {
+            #utama {
+                padding-top: 65px;
+                /* Space for the navbar, adjust based on actual navbar height */
+                height: calc(100vh - 65px);
+                /* Adjust the height taking the navbar into account */
+                /* Pull the section back up to align with the top of the viewport */
+            }
+        }
+
+        /* Responsive styles for mobile devices */
+        @media (max-width: 768px) {
+            #utama {
+                background-image: url('img/mobilelanding.jpg');
+                background-size: contain;
+                /* Adjust if the image is getting cropped */
+                background-position: center top;
+                background-repeat: no-repeat;
+                padding-top: 65px;
+                /* Adjust based on the mobile navbar's height */
+                height: calc(100vh - 65px);
+                /* Adjust based on the mobile navbar's height */
+                /* Adjust if necessary */
+            }
+        }
+    </style>
+    </style>
     <section id="utama">
-        <div class="hero container-fluid">
-            <div class="color-overlay-banner">
-                <img src="{{ asset('img/bannerr.png') }}" class="gambar-banner img-fluid" alt="">
-            </div>
-        </div>
     </section>
 
     <section id="fasilitas">
@@ -42,7 +109,7 @@
     </section>
 
     <section id="type-rumah">
-        <div class="container-fluid" style="background-color: #c2c9c3">
+        <div class="container-fluid" style="background-color: #092947">
             <div class="row mb-2">
                 <div class="judul-type-rumah col-8 p-2">
                     <div class="row">
@@ -53,94 +120,43 @@
                     </div>
                 </div>
             </div>
-            <div class="row p-2 mb-2">
-                <div class="col-5">
-                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="10000">
-                                <img src="/img/home-1.jpg" class="img-carousel d-block" width="440" height="200"
-                                    alt="">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="2000">
-                                <img src="/img/home-1a.jpeg" class="img-carousel d-block" width="440" height="200"
-                                    alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/img/home-1.jpg" class="img-carousel d-block" width="440" height="200"
-                                    alt="">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="deskripsi-type d-flex justify-content-center align-items-center">
-                        <div class="container-type">
-                            <div class="centered-text-box-type">
-                                <p class="mb-3"><b> TYPE 1 LANTAI </b></p>
-                                <span class="">Luas Bangunan (48 m2)</span> <br>
-                                <span>Luas Tanah (84 m2)</span> <br>
-                                <span>Harga Mulai dari <b>1 M</b></span>
-                                <div class="mt-2">
-                                    <button type="button" class="btn btn-success"
-                                        style="background-color: #22cf39">Whatsapp</button>
-                                    <button type="button" class="btn btn-outline-primary">Info Lebih Lanjut</button>
+            <div class="box-card p-3">
+                <div class="row">
+                    <div class="col-lg-5 d-flex justify-content-lg-center align-items-lg-center">
+                        <div class="card" style="width: 20rem;">
+                            <img src="{{ asset('img/home-1.jpg') }}" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="box-type">
+                                            <h4 class="p-1" style="font-size: 12px">Tipe Lantai 1</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <p><b>Luas Bangunan (72 m2)</b></p>
+                                        <p><b>Luas Tanah (84 m2)</b></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row p-2">
-                <div class="col-5">
-                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="10000">
-                                <img src="/img/home-1.jpg" class="img-carousel d-block" width="440" height="200"
-                                    alt="">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="2000">
-                                <img src="/img/home-1a.jpeg" class="img-carousel d-block" width="440" height="200"
-                                    alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/img/home-1.jpg" class="img-carousel d-block" width="440" height="200"
-                                    alt="">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    <div class="col-lg-2 d-flex justify-content-lg-center align-items-lg-center">
+                        <img src="{{ asset('img/harga1m.png') }}" class="img-fluid" alt="">
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="deskripsi-type d-flex justify-content-center align-items-center">
-                        <div class="container-type">
-                            <div class="centered-text-box-type">
-                                <p class="mb-3"><b> TYPE 1 LANTAI </b></p>
-                                <span class="">Luas Bangunan (48 m2)</span> <br>
-                                <span>Luas Tanah (84 m2)</span> <br>
-                                <span>Harga Mulai dari <b>1 M</b></span>
-                                <div class="mt-2">
-                                    <button type="button" class="btn btn-success"
-                                        style="background-color: #22cf39">Whatsapp</button>
-                                    <button type="button" class="btn btn-outline-primary">Info Lebih Lanjut</button>
+                    <div class="col-lg-5 d-flex justify-content-lg-center align-items-lg-center">
+                        <div class="card" style="width: 20rem;">
+                            <img src="{{ asset('img/home-1.jpg') }}" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="box-type">
+                                            <h4 class="p-1" style="font-size: 12px">Tipe Lantai 1</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p><b>Luas Bangunan (72 m2)</b></p>
+                                        <p><b>Luas Tanah (84 m2)</b></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -198,29 +214,6 @@
         </div>
     </section>
 
-    {{-- <section id="lantai">
-        <div class="container-fluid">
-            <div class="row align-items-start">
-                <div class="col d-flex justify-content-center" style="background-color: #2173C0">
-                    <h3>Lantai 1</h3>
-                    <hr>
-                </div>
-                <div class="col d-flex justify-content-center" style="background-color: #0F3B65">
-                    <h3>Lantai 2</h3>
-                    <hr>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col p-2" style="background-color: #2173C0">
-                    <img src="{{ asset('img/lantai-1.png') }}" class="d-block w-100" alt="">
-                </div>
-                <div class="col p-2" style="background-color: #0F3B65">
-                    <img src="{{ asset('img/lantai-2.png') }}" class="d-block w-100" height="110" alt="">
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
     <section id="artikel">
         <div class="container-fluid" style="background-color: #092947">
             <div class="p-3 ms-3">
@@ -228,10 +221,10 @@
             </div>
             <div class="d-flex justify-content-center">
                 <div class="row">
-                    <div class="card">
+                    <div class="card" style="background: #092947">
                         <img src="{{ asset('img/artikel-1.png') }}" class="card-img-top" alt="">
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
+                            <div class="text-card d-flex justify-content-between">
                                 <button id="card-judul" type="button" class="btn btn-outline-primary" disabled>Mutiara
                                     Artikel</button>
                                 <p>09 Maret 2024</p>
@@ -248,10 +241,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="card">
+                    <div class="card" style="background: #092947">
                         <img src="{{ asset('img/artikel-2.png') }}" class="card-img-top" alt="">
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
+                            <div class="text-card d-flex justify-content-between">
                                 <button id="card-judul" type="button" class="btn btn-outline-primary" disabled>Mutiara
                                     Artikel</button>
                                 <p>09 Maret 2024</p>
@@ -268,10 +261,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="card">
+                    <div class="card" style="background: #092947">
                         <img src="{{ asset('img/artikel-3.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
+                            <div class="text-card d-flex justify-content-between">
                                 <button id="card-judul" type="button" class="btn btn-outline-primary" disabled>Mutiara
                                     Artikel</button>
                                 <p>09 Maret 2024</p>
