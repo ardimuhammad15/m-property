@@ -37,7 +37,7 @@
 
         @media (max-width: 768px) {
             .container-fasilitas {
-                background-image: url('img/bg-fasilitas-mobile.png');
+                background-image: url('img/img-fasilitas.png');
                 height: 98vh;
             }
 
@@ -71,7 +71,8 @@
         }
     </style>
     <section id="utama">
-        <img src="{{ asset('img/bannerr.png') }}" class="gambar-banner img-fluid" alt="">
+        <img src="{{ asset('img/desktoplanding.jpg') }}" class="desktop-image img-fluid" alt="">
+        <img src="{{ asset('img/mobilelanding.jpg') }}" class="mobile-image img-fluid" alt="">
     </section>
 
     {{-- <section id="fasilitas">
@@ -273,15 +274,13 @@
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="{{ asset('img/home-1.jpg') }}" class="d-block w-100" alt="">
+                                            <img src="{{ asset('img/home-1.jpg') }}" class="img-carousel d-block w-100" alt="">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{ asset('img/home-1a.jpeg') }}" class="d-block w-100"
-                                                alt="">
+                                            <img src="{{ asset('img/home-1a.jpeg') }}" class="img-carousel  d-block w-100" alt="">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{ asset('img/home-1.jpg') }}" class="d-block w-100"
-                                                alt="">
+                                            <img src="{{ asset('img/home-1.jpg') }}" class="img-carousel d-block w-100" alt="">
                                         </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button"
@@ -314,7 +313,7 @@
                     </div>
                     <div
                         class="col-lg-2 p-2 d-flex justify-content-lg-center justify-content-center align-items-lg-center">
-                        <img src="{{ asset('img/harga1m.png') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('img/harga1m.png') }}" class="img-harga img-fluid" alt="">
                     </div>
                     <div
                         class="col-lg-5 p-2 d-flex justify-content-lg-center justify-content-center align-items-lg-center">
@@ -333,15 +332,15 @@
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="{{ asset('img/home-2.jpg') }}" class="d-block w-100"
+                                            <img src="{{ asset('img/home-2.jpg') }}" class="img-carousel d-block w-100"
                                                 alt="">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{ asset('img/home-2a.jpg') }}" class="d-block w-100"
+                                            <img src="{{ asset('img/home-2a.jpg') }}" class="img-carousel d-block w-100"
                                                 alt="">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{ asset('img/home-2.jpg') }}" class="d-block w-100"
+                                            <img src="{{ asset('img/home-2.jpg') }}" class="img-carousel d-block w-100"
                                                 alt="">
                                         </div>
                                     </div>

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Us via WhatsApp</title>
 
     <!-- Load Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
@@ -80,7 +79,8 @@
 </head>
 
 <body>
-    <a href="https://wa.me/6285813076036?text=Halo%20Saya%20tertarik%20dengan%20rumah%20anda%20saya%20ingin%20tanya%20lebih%20lanjut!" class="floating" target="_blank">
+    <a href="https://wa.me/6285813076036?text=Halo%20Saya%20tertarik%20dengan%20rumah%20anda%20saya%20ingin%20tanya%20lebih%20lanjut!"
+        class="floating" target="_blank">
         <i class="fab fa-whatsapp fab-icon"></i>
     </a>
 </body>

@@ -268,12 +268,15 @@ h2 {
     border-radius: 10px;
 }
 
-.text-card p {
-    color: #eaeaea;
+.img-carousel {
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.img-carousel {
-    border-radius: 20px;
+.text-card p {
+    color: #eaeaea;
 }
 
 .centered-text-box-type {
@@ -444,7 +447,7 @@ a.btn.btn-danger {
     background-color: #dc3545;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     body {
         font-size: 14px;
     }
@@ -453,6 +456,38 @@ a.btn.btn-danger {
     }
     .gambar-banner {
         width: 768px;
-        height: auto;
+        height: 400px;
+    }
+} */
+
+.desktop-image {
+    display: none; /* Sembunyikan gambar desktop secara default */
+}
+
+/* CSS untuk mobile */
+.mobile-image {
+    display: none; /* Sembunyikan gambar mobile secara default */
+}
+
+/* Media Query untuk perangkat dengan lebar layar <= 768px (mobile) */
+@media only screen and (max-width: 768px) {
+    .desktop-image {
+        display: none; /* Sembunyikan gambar desktop di layar mobile */
+    }
+
+    .mobile-image {
+        width: 768px;
+        display: block; /* Tampilkan gambar mobile di layar mobile */
+    }
+}
+
+/* Media Query untuk perangkat dengan lebar layar > 768px (desktop) */
+@media only screen and (min-width: 769px) {
+    .desktop-image {
+        display: block; /* Tampilkan gambar desktop di layar desktop */
+    }
+
+    .mobile-image {
+        display: none; /* Sembunyikan gambar mobile di layar desktop */
     }
 }
